@@ -17,7 +17,7 @@
 		//create weapon array
 		var weapons = ['rock' , 'paper', 'scissors'];
 
-		//assign weapons
+		//create variables for each players weapons, assign values for testing purposes
 		var weaponPlayer1 =(weapons[parseInt(Math.random()*weapons.length) %3]);
 		var weaponPlayer2 =(weapons[parseInt(Math.random()*weapons.length) %3]);
 
@@ -25,7 +25,80 @@
 		//console.log(player1 + " " + weaponPlayer1);
 		//console.log(player2 + " " + weaponPlayer2);
 
-		//Loopt that stops when a player gets three wins
+		//creating switches for the loop
+		var switch1= 0;
+		var switch2= 0;
+
+		//Loop that stops when a player gets three wins
+		while(winsPlayer1 < 3 && winsPlayer2 < 3){
+
+			//game starts here
+
+			//eache player chooses a weapon;
+			weaponPlayer1 =(weapons[parseInt(Math.random()*weapons.length) %3]);
+			weaponPlayer2 =(weapons[parseInt(Math.random()*weapons.length) %3]);
+
+
+			
+
+			//switch values
+			if(weaponPlayer1 == "rock"){
+				switch1 = 1;
+			} else if(weaponPlayer1 == "paper"){
+				switch1 = 2;
+			} else if(weaponPlayer1 == "scissors"){
+				switch1 = 3;
+			} else { console.log("switch1 error")}
+
+			// to test first part of the loop
+			console.log(player1 + " " + weaponPlayer1);
+			//console.log(player2 + " " + weaponPlayer2);
+
+
+
+				
+			//creating switch1
+			switch(switch1){
+
+
+
+
+				//player one
+				case 1:
+					//test switch
+					console.log("case 1");
+
+					//if(weaponPlayer1 == 'rock'){
+					//	switch1 = 1;
+					//} else if(weaponPlayer1 == 'paper'){
+					//	switch1 = 2;
+					//} else if(weaponPlayer1 == 'scissors'){
+					//	switch1 = 3;
+					//} else { console.log("switch1 error")}
+
+					//console.log("case 1");
+
+					break;
+					
+				case 2:
+					//test switch
+
+					console.log("case 2");
+
+					break;
+					
+				case 3:
+					//test switch
+					console.log("case 3");
+
+					break;
+								
+
+		}
+		winsPlayer1 ++;
+
+
+		}
 		
 
 
